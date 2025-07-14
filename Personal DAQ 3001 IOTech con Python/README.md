@@ -34,7 +34,7 @@ Una vez completados estos pasos, la placa debería estar lista para usarse con l
 
 
 ## VERIFICAR CORRECTA INSTALACIÓN:
-Para verificar que todo está funcionando correctamente podemos empezar por listar los dispositivos conectados, corriendo el archivo "enummerate_devices.py". 
+Para verificar que todo está funcionando correctamente podemos empezar por listar los dispositivos conectados, corriendo el archivo `enummerate_devices.py`. 
 
 ```
 from PyIOTech import daq
@@ -53,7 +53,8 @@ Dispositivos encontrados: 1
 ```
 
 ## LEER UN CANAL:
-Lo más básico que podemos hacer es leer el voltaje de un único canal, corriendo "read_single_channel_value.py". Podemos conectar la salida del generador de funciones al canal 0 de los analogs input de la placa. IMPORTANTE: todas las mediciones, single-ended como differential se realizan respecto al common, así que poner ahí la Tierra del generador. 
+Lo más básico que podemos hacer es leer el voltaje de un único canal, corriendo `read_single_channel_value.py`. Podemos conectar la salida del generador de funciones al canal 0 de los analogs input de la placa. 
+> **IMPORTANTE**: todas las mediciones, single-ended como differential se realizan respecto al common, así que poner ahí la Tierra del generador. 
 
 ```
 from PyIOTech import daq, daqh
@@ -78,14 +79,14 @@ finally:
 Este código lee un único valor en modo diferencial del canal 0 y lo convierte a voltaje. 
 
 ## ARMAR SCANEO:
-Para leer de forma continua uno o varios canales hay que armar un scaneo como en el archivo "scan.py".
+Para leer de forma continua uno o varios canales hay que armar un scaneo como en el archivo `scan.py`.
 
 ## GUARDAR DIRECTO EN DISCO:
 Para poder medir durante un tiempo relativamente largo, mayor a un par de segundos, habrá que guardar los datos binarios directamente en disco, para no sobrecargar la memoria. 
-Este procedimiento se muestra en "direct_to_disk.py"
+Este procedimiento se muestra en `direct_to_disk.py`.
 
 ## OTROS EJEMPLOS Y COSAS ÚTILES:
-En "osciloscope.py" hay un programa que lee el voltaje de los canales especificados y grafica el resultado. 
-En "measure_interface.py" hay una GUI para adquirir de forma más cómoda de los canales especificados. Guarda además la metadata de la configuración de ese escaneo específico. 
-Ambos archivos dependen de "Formatter.py" para convertir los valores binarios a voltaje.  
+En `osciloscope.py` hay un programa que lee el voltaje de los canales especificados y grafica el resultado. 
+En `measure_interface.py` hay una GUI para adquirir de forma más cómoda de los canales especificados. Guarda además la metadata de la configuración de ese escaneo específico. 
+Ambos archivos dependen de `Formatter.py` para convertir los valores binarios a voltaje.  
 
