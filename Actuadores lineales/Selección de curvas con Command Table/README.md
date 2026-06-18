@@ -1,4 +1,4 @@
-# En este documento se describe la configuración de Command Table para alternar entre curvas (LinMot Talk)
+# Utilización de la Command Table para alternar entre curvas (LinMot Talk)
 
 En este documento se describe la configuración de la **Command Table** para alternar entre dos curvas de forma cíclica en el drive.
 
