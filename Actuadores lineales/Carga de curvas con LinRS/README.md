@@ -23,7 +23,7 @@ Para poder correr el script y cargar las curvas hay que seguir los siguientes pa
 2. Desenchufar la lógica y potencia del drive.
 3. Cambiar el switch `S3.4` del costado del drive a `On`. En nuestro caso todos están en `Off` por defecto.
 
-![switches](/Assets/switches.jpg)
+![switches](./Assets/switches.jpg)
 
 ---
 
@@ -39,7 +39,8 @@ Para poder correr el script y cargar las curvas hay que seguir los siguientes pa
 
 ```bat
 conda activate pdaqenv
-python linmot_bulk_upload.py COM3 ./Curvas_random/ --id 0x3f --baud 57600 --delete-all-curves``` 
+python linmot_bulk_upload.py COM3 ./Curvas_random/ --id 0x3f --baud 57600 --delete-all-curves
+``` 
 
 Con esto se especifica:
 
@@ -83,4 +84,5 @@ Para que LinMot Talk interprete correctamente estas unidades como milímetros du
 
 ```python
 import struct
-struct.pack_into('<H', info, 38, 0x0005)  # YDimUUID``` 
+struct.pack_into('<H', info, 38, 0x0005)  # YDimUUID
+``` 
