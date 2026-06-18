@@ -41,8 +41,7 @@ Para poder correr el script y cargar las curvas hay que seguir los siguientes pa
 conda activate pdaqenv
 python linmot_bulk_upload.py COM3 ./Curvas_random/ --id 0x3f --baud 57600 --delete-all-curves
 ``` 
-
-Con esto se especifica:
+O en el `env` donde corresponda. Con esto se especifica:
 
 - **Puerto del drive:** `COM3`  
 - **Directorio de curvas:** carpeta que contiene los `.csv` a subir  
@@ -50,17 +49,17 @@ Con esto se especifica:
 
 Para esto, en LinMot Talk debe configurarse que el MACID se defina por parámetro:
 
-![MACID source](/Assets/MACID_source.jpg)
+![MACID source](./Assets/MACID_source.jpg)
 
 El parámetro utilizado se puede revisar acá:
 
-![MACID ID](/Assets/MACID_id.jpg)
+![MACID ID](./Assets/MACID_id.jpg)
 
 En este caso `003Fh` corresponde a `0x3f` en hexadecimal.
 
 - **Baud Rate de la comunicación:**
 
-![Baud rate](/Assets/Baud_rate_definition.jpg)
+![Baud rate](./Assets/Baud_rate_definition.jpg)
 
 En este caso es **57600**.
 
