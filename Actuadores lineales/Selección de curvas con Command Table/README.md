@@ -173,11 +173,11 @@ Solo algunas líneas están activas (en este caso 4), el resto (251) están vac�
 
 ---
 
-## 10) Objetivo futuro
+<!-- ## 10) Objetivo futuro -->
 
-Se busca automatizar la generación de archivos `.lmc` desde Python para:
+<!-- Se busca automatizar la generación de archivos `.lmc` desde Python para: -->
 
-- Alternar entre múltiples curvas (≈10 o más)
-- Generar secuencias aleatorias
-- Escalar hasta ~122 curvas
-- Duraciones totales ~20 minutos por experimento
+<!-- - Alternar entre múltiples curvas (≈10 o más) -->
+<!-- - Generar secuencias aleatorias -->
+<!-- - Escalar hasta ~122 curvas -->
+<!-- - Duraciones totales ~20 minutos por experimento -->
