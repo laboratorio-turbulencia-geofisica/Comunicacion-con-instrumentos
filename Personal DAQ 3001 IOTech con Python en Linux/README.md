@@ -33,7 +33,7 @@ capturas USB del driver de Windows; está documentado en [`docs/protocolo.md`](d
 3. **Firmware de la placa**
    La placa necesita dos archivos de firmware que son propiedad de IOtech/Measurement Computing y por
    eso **no se incluyen** en este repositorio. Se extraen de los drivers de Windows que instala
-   **DAQView** (ver la [guía de instalación en Windows](../Personal%20DAQ%203001%20IOTech%20con%20Python)):
+   **DAQView** (ver la [guía de instalación en Windows](../Personal%20DAQ%203001%20IOTech%20con%20Python%20en%20Windows)):
    copiar desde una PC con DAQView instalado los archivos `pdaq3kld.sys` y `pdaq3k.sys`
    (habitualmente en `C:\Windows\System32\drivers\` o en `C:\Program Files (x86)\DaqX\Drivers\USB_x64\`)
    y correr:
