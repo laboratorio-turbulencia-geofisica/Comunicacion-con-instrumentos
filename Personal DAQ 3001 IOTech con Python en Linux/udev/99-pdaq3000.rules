@@ -1,0 +1,3 @@
+# IOtech PersonalDaq/3000: sin firmware (0470) y con firmware FX2 cargado (2c01)
+SUBSYSTEM=="usb", ATTR{idVendor}=="0622", ATTR{idProduct}=="0470", MODE="0666", GROUP="plugdev"
+SUBSYSTEM=="usb", ATTR{idVendor}=="0622", ATTR{idProduct}=="2c01", MODE="0666", GROUP="plugdev"

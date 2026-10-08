@@ -1,0 +1,4 @@
+libusb1>=3.0
+numpy>=1.20
+# opcionales, para los ejemplos con gráficos:
+matplotlib

@@ -1,0 +1,9 @@
+# Firmware propietario: se extrae con tools/extraer_firmware.py, no se distribuye
+PyIOTech/pdaq3k_fx2.ihx
+PyIOTech/pdaq3001_fpga.bin
+# datos de adquisición
+*.bin
+*_metadata.json
+__pycache__/
+*.pyc
+.venv/
